@@ -1,0 +1,29 @@
+package com.test.resturantorderapp.ordermanager;
+
+import com.test.resturantorderapp.order.Order;
+
+public class OrderManagementImpl {
+
+    private  Order order;
+
+    public OrderManagementImpl(Order order) {
+        this.order = order;
+    }
+
+    public void addOrderItems(String item){
+        this.order.addOrderItems(item);
+    }
+    public void removeOrderItems(String item){
+        this.order.removeOrderItems(item);
+    }
+    public void clearOrderItems(){
+        this.order.clearOrderItems();
+    }
+    public void getOrderItems(){
+        System.out.println("Order items :" +   " " +      this.order.getOrderItems());
+    }
+
+
+
+
+}
